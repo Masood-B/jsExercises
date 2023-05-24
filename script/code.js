@@ -27,3 +27,13 @@ function fullName(){
 } 
 fullName();
 
+// Q2
+
+let firstName = "Masood";
+let lastName = "Basardien";
+let age = 21;
+let subjects = [`Mathematics`, `Physical Science`, `Life Science` , `Accounting`, `Life Orientation`, `English`, `Afrikaans`];
+let address = [`Chapel Road`, 14, `Mitchell's Plain`, `Cape Town`, `South Africa`]
+
+let info = [firstName, lastName, age, subjects, address]
+console.log(info)
