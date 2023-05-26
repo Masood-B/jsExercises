@@ -37,3 +37,26 @@ let address = [`Chapel Road`, 14, `Mitchell's Plain`, `Cape Town`, `South Africa
 
 let info = [firstName, lastName, age, subjects, address]
 console.log(info)
+
+// Q3
+
+function btnResult(){
+
+let numb1 = +document.querySelector("#numb1").value;
+let numb2 = +document.querySelector("#numb2").value;
+let sign = document.querySelector("#operator").value;
+// let calculate = document.querySelector("#display");
+let result = document.querySelector(".lblResult");
+    
+    if (sign == "-"){
+        result.innerText = numb1 - numb2;
+    }else if (sign == "+"){
+        result.innerText = numb1 + numb2;
+    }else if (sign == "/"){
+        result.innerText = numb1 / numb2;
+    }else if (sign == "*"){
+        result.innerText = numb1 * numb2;
+    }
+
+}
+    
