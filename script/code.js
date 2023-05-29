@@ -61,6 +61,8 @@ let result = document.querySelector(".lblResult");
 }
 // Q4
 
+// used what give in the link: https://www.freecodecamp.org/news/how-to-reverse-a-string-in-javascript-in-3-different-ways-75e4763c68cb/
+
 // let back = "programming";
 // let ward = back.split("");
 // console.log(ward.reverse().join(""));
@@ -71,3 +73,47 @@ for (let i = pc.length - 1; i >= 0; i--){
     newPc += pc[i];
 }
 console.log(newPc)
+
+// Q5
+
+let pName = [
+    "Kelly",
+    "Joe",
+    "Trevor",
+    "Mish-Al"
+]
+let pDob = [
+    "2020-03-11",
+    "2021-06-04",
+    "2019-12-20",
+    "2020-05-31"
+]
+
+let detail = {pName,pDob};
+console.log(detail)
+
+// let qFive = {
+// nameFirst: "Mash-Al",
+// old: 2,
+// daysLeft:"2 days",
+// };
+// let display = qFive.nameFirst +" I am years " + qFive.old +" and my birthday is up in " + qFive.daysLeft;
+// console.log(display);
+
+// calculate the age
+let dob = new Date(05/29/2020);
+let next = Date.now() - dob.getTime();
+let ageDt = new Date(next);
+let year = ageDt.getUTCFullYear();
+let old = Math.abs(year - 2020);
+
+// calculate how many days
+let date_1 = new Date('05/31/2023');
+let date_2 = new Date();
+let days = (date_1, date_2) =>{
+    let minus = date_1.getTime() - date_2.getTime();
+    let daysLeft = Math.ceil(minus / (1000 * 60 * 60 * 24));
+    return daysLeft;
+}
+
+console.log("My name is Mish-Al, I am "+old+ " years old years old and my birthday is in "+days(date_1, date_2)+" days time ")
