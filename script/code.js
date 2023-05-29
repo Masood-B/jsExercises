@@ -67,6 +67,8 @@ let result = document.querySelector(".lblResult");
 // let ward = back.split("");
 // console.log(ward.reverse().join(""));
 
+// console.dir(new String);
+
 let pc = "programming";
 let newPc = "";
 for (let i = pc.length - 1; i >= 0; i--){
@@ -117,3 +119,39 @@ let days = (date_1, date_2) =>{
 }
 
 console.log("My name is Mish-Al, I am "+old+ " years old years old and my birthday is in "+days(date_1, date_2)+" days time ")
+
+// Q6
+
+let marks = 0;
+
+switch (true) {
+ case marks == 100:
+ console.log("You're amazing");
+ break;
+ case marks >= 90:
+ console.log("Well Done");
+ break;
+ case marks >= 80:
+ console.log("Way to go");
+ break;
+ case marks >= 75:
+ console.log("Keep it up");
+ break;
+ case marks >= 60:
+ console.log("You did good");
+ break;
+ case marks >= 50:
+ console.log("That was good");
+ break;
+ case marks <= 49:
+ console.log("You failed");
+ break;
+ default:
+ console.log("You failed");
+}
+
+// for (let i = 0; i < 10; i++){
+//     if ((i % 2) > 0)
+//     continue
+// }
+// console.log(i)
