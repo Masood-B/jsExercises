@@ -59,4 +59,15 @@ let result = document.querySelector(".lblResult");
     }
 
 }
-    
+// Q4
+
+// let back = "programming";
+// let ward = back.split("");
+// console.log(ward.reverse().join(""));
+
+let pc = "programming";
+let newPc = "";
+for (let i = pc.length - 1; i >= 0; i--){
+    newPc += pc[i];
+}
+console.log(newPc)
